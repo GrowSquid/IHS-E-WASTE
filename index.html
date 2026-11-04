@@ -41,7 +41,7 @@ const GUIDE = {
 
 
         hardware: {
-            text: 'This is the hardware section of the guide. What would you like to know about?',
+            text: 'A lesser considered part of energy conservation!',
             options: [
                 { label: "GPU", goto: "gpu" },
                 { label: "Monitor", goto: "monitor" },
@@ -51,7 +51,7 @@ const GUIDE = {
         },
 
         gpu: {
-            text: 'Lower clock ',
+            text: 'Lower clock speeds via tools like MSI Afterburner. If you have multiple GPUs, consider selecting the most efficient one for lower end tasks.',
             options: [
                 { label: "Back to Hardware", goto: "hardware" },
                 { label: "Back to the start", goto: "start" },
@@ -59,7 +59,7 @@ const GUIDE = {
         },
 
         monitor: {
-            text: 'Adjust your monitor settings to reduce power consumption. Lower brightness and enable auto-dimming features.',
+            text: 'Lower brightness and enable auto-dimming features. Consider setting your refresh rate lower for less demanding tasks.',
             options: [
                 { label: "Back to Hardware", goto: "hardware" },
                 { label: "Back to the start", goto: "start" },
@@ -67,58 +67,65 @@ const GUIDE = {
         },
 
         input_devices: {
-            text: 'Choose energy-efficient input devices. Mechanical keyboards and optical mice can help reduce power consumption.',
+            text: 'Disable and delete any RGB software that may have installed when your peripherals were connected.',
             options: [
                 { label: "Back to Hardware", goto: "hardware" },
                 { label: "Back to the start", goto: "start" },
             ],
         },
 
-        waste_no: {
-            text: 'Move towards Rivian and use the Enter key to progress through dialogue',
+        software: {
+            text: 'The main crux of computing efficiency!',
             options: [
-            { label: "Back to Beginning Wasteland", goto: "waste" },
-            { label: "Back to the start", goto: "start" },
+            { label: "Games", goto: "game" },
+            { label: "Programs", goto: "program" },
             ],
         },
 
-        fights: {
-            text: 'This is where the Rat King stores his minions. Which enemy are you fighting?',
+        game: {
+            text: 'Adjust graphics settings to Performance and set the max FPS to the monitor refresh rate or lower',
             options: [
-                { label: "Rodent", goto: "rat" },
-                { label: "Viper", goto: "snake" },
+                { label: "Back to Software", goto: "software" },
                 { label: "Back to the start", goto: "start" },
             ],
         },
 
-        rat: {
-            text: 'Use the Rolling Axe as the Rodent is immune to regular attacks',
+        program: {
+            text: 'Prevent any programs from running in the background and opening on startup unless they are necessary.',
             options: [
-            { label: "Back to Underground Dungeon", goto: "waste" },
+            { label: "Back to Software", goto: "software" },
             { label: "Back to the start", goto: "start" },
             ],
         },
 
-        snake: {
-            text: 'Use Sword Cut with Rivian in your party. Heal when necessary',
+        internal: {
+            text: 'Background settings that will be less noticeable but still impactful!',
             options: [
-            { label: "Back to Underground Dungeon", goto: "waste" },
-            { label: "Back to the start", goto: "start" },
+            { label: "Basic settings (Recommended)", goto: "basic" },
+            { label: "Advanced settings", goto: "advanced" },
             ],
         },
         
-        final: {
-            text: 'The Final Boss Fight; Collect the healing items before entering',
+        basic: {
+            text: 'Simple settings for quick comparisons, ',
             options: [
-                { label: "Final Boss Help", goto: "bruh" },
+                { label: "Task Manager", goto: "manager" },
+                { label: "Settings App", goto: "settings" },
+            ],
+        },
+
+        manager: {
+            text: 'identify and close unnecessary background processes, and prevent them from opening on startup.',
+            options: [
+                { label: "Back to Internal Settings", goto: "internal" },
                 { label: "Back to the start", goto: "start" },
             ],
         },
 
-        bruh: {
-            text: 'Use all party members; Rat King has high defense, so play conservatively',
+        advanced: {
+            text: 'Advanced settings for users who want more control over their system.',
             options: [
-                { label: "Back to Underground Dungeon", goto: "final" },
+                { label: "Back to Internal Settings", goto: "internal" },
                 { label: "Back to the start", goto: "start" },
             ],
         },
