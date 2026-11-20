@@ -5,21 +5,37 @@
     body {
         margin: 0;
         background: #0c1b12;
-        color: #6cf0c6;
+        color: #eaee0f;
         font: 17px/1.7 monospace;
         text-align: center;
     }
     #text { font-size: 1.6rem; }
     #scene-image {
-    display: block;
-    margin: 1rem auto;
-    max-width: 90%;
-    max-height: 300px;
+        display: block;
+        margin: 1rem auto;
+        max-width: 90%;
+        max-height: 300px;
     }
     #scene-image[hidden] { display: none; }
-    button { font-size: 1.4rem; margin: 1rem 0; }
-    button::before { content: "> "; color: #a08040; }
-    button:hover { background: #35260f; color: #ffe5a8; }
+    button {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        background: linear-gradient(#858b83, #6cf0c6, #858b83);
+        color: #ffffff;
+        font-family: monospace;
+        border: 1px solid #6cf0c6;
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    button::before {
+        content: "> ";
+        color: #a08040; }
+    button:hover {
+        background: #35260f;
+        color: #ffe5a8;
+        }
 </style>
 
 <body>
