@@ -10,7 +10,7 @@ Buttons with forwards and backwards navigation
 
 ## Deployment  
 Open via Github Pages:  
-
+https://growsquid.github.io/IHS-E-WASTE/
 OR  
 Download the source files directly, including the images   
 and run in a browser of your choice
