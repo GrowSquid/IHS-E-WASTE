@@ -59,6 +59,7 @@ const GUIDE = {
         { label: "Hardware", goto: "hardware" },
         { label: "Software", goto: "software" },
         { label: "System Settings", goto: "internal" },
+        { label: "Credits", goto: "final" },
             ],
         },
 
@@ -136,16 +137,23 @@ const GUIDE = {
         
         basic: {
             image: "images/integrated GPU switch.JPG",
-            text: 'Simple settings for quick comparisons',
+            text: 'Decide between using the integrated GPU or the dedicated GPU for optimal performance.',
             options: [
                 { label: "Task Manager", goto: "manager" },
-                { label: "Settings App", goto: "settings" },
+                { label: "Settings App", goto: "setting" },
             ],
         },
-
+        setting: {
+            image: "images/simplesettings.jpg",
+            text: 'Disable any unnecessary background apps and prevent them from opening on startup.',
+            options: [
+                { label: "Back to Internal Settings", goto: "internal" },
+                { label: "Back to the start", goto: "start" },
+            ],
+        },
         manager: {
             image: "images/Teams Efficiency mode(software).JPG",
-            text: 'identify and close unnecessary background processes, and prevent them from opening on startup.',
+            text: 'Identify and close unnecessary background processes, and prevent them from opening on startup.',
             options: [
                 { label: "Back to Internal Settings", goto: "internal" },
                 { label: "Back to the start", goto: "start" },
@@ -154,9 +162,16 @@ const GUIDE = {
 
         advanced: {
             image: "images/Bing Search.JPG",
-            text: 'Advanced settings for users who want more control over their system.',
+            text: 'Disabling Bing search and reduces background activity.',
             options: [
                 { label: "Back to Internal Settings", goto: "internal" },
+                { label: "Back to the start", goto: "start" },
+            ],
+        },
+
+        final: {
+            text: 'Thanks for checking out the guide! This was made primarily by GrowSquid, with some button mechanics being AI.',
+            options: [
                 { label: "Back to the start", goto: "start" },
             ],
         },
