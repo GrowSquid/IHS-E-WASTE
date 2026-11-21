@@ -17,6 +17,14 @@
         max-height: 300px;
     }
     #scene-image[hidden] { display: none; }
+
+    #title-screen {
+        margin: 1rem auto;
+        max-width: 90%;
+        max-height: 300px;
+    }
+    #title-screen[hidden] { display: none; }
+
     button {
         font-size: 1.4rem;
         margin: 1rem 0;
@@ -27,6 +35,11 @@
         border: 1px solid #6cf0c6;
         cursor: pointer;
         transition: background 0.3s, color 0.3s;
+    }
+    #options {
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     button::before {
@@ -41,8 +54,8 @@
 <body>
 
 <main>
-<h1 id="title"></h1>
-<img id="scene-image" alt="">
+<img id="title-screen" src="images/Energy Conservation.jpg">
+<img id="scene-image">
 <div id="text"></div>
 <ul id="options"></ul>
 
@@ -180,6 +193,8 @@ const GUIDE = {
 // Engine, it IS AI GENERATED SORRY :( 
 function show(id) {
   const scene = GUIDE.scenes[id];
+  const titleScreen = document.getElementById("title-screen");
+  titleScreen.hidden = (id !== "start");
   document.getElementById("text").textContent = scene.text.trim();
   const list = document.getElementById("options");
   list.innerHTML = "";
@@ -201,7 +216,6 @@ function show(id) {
   });
 }
  
-document.getElementById("title").textContent = GUIDE.title;
 document.title = GUIDE.title;
 show("start");
 
