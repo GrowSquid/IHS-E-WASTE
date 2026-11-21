@@ -1,10 +1,11 @@
 # Energy Conservation
-Welcome to the GrowSquid's method to save energy !  
-I have created a guide in HTML to attempt to keep your devices more efficient  
+Welcome to GrowSquid's methods to save energy!  
+I have created a guide in HTML to attempt to keep your already-owned devices more efficient  
 
 ## Features  
 Basic and advanced settings  
-Pictures with Guides
+Visual clarifications  
+Step by step pointers for procedures  
 Buttons with forwards and backwards navigation  
 
 ## Deployment  
